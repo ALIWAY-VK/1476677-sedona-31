@@ -230,4 +230,86 @@ img {
     padding-top: 160px;
     padding-bottom: 82px;
     text-align: center;
+    position: relative;
+}
+
+.features-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features-item-house::before {
+    background-image: url("../img/index/icon-1-house.svg");
+    width: 75px;
+    height: 72px;
+    top: 62px;
+}
+
+.features-item-food::before {
+    background-image: url("../img/index/icon-3-food.svg");
+    width: 75px;
+    height: 70px;
+    top: 62px;
+}
+
+.features-item-presents::before {
+    background-image: url("../img/index/icon-2-presents.svg");
+    width: 64px;
+    height: 77px;
+    top: 56px;
+}
+
+.features-item-description {
+    color: var(--basic-gray-promo-text);
+    margin: 0;
+}
+
+.reasons-row-last {
+    background-color: var(--basic-white-gray);
+}
+
+.page-footer {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-info {
+    padding-left: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-top: 23px;
+}
+
+.footer-info-hashtag {
+    margin: 0;
+    margin-bottom: 9px;
+}
+
+.footer-info-phone {
+    color: var(--basic-black);
+}
+
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    width: 46px;
+    height: 48px;
+    background-color: var(--basic-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
