@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/PTSans.woff") format("woff"), url("/fonts/PTSans.woff2") format("woff2");
+    src: url("../fonts/PTSans.woff") format("woff"), url("../fonts/PTSans.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,11 +10,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/PTSans-Bold.woff") format("woff"), url("/fonts/PTSans-Bold.woff2") format("woff2");
+    src: url("../fonts/PTSans-Bold.woff") format("woff"), url("../fonts/PTSans-Bold.woff2") format("woff2");
     font-display: swap;
 }
 
-:root {
+
+/* Variables */
+
+ :root {
     --basic-gray: #888888;
     --basic-gray-promo-text: #333333;
     --basic-white-gray: #EEEEEE;
@@ -26,6 +29,7 @@
     --basic-gray-footer-logo-press: #BDBBBC;
     --basic-gray-arrow-up: #CACACA;
     --basic-gray-filter-button: #ABABAB;
+    --basic-gray-filter-button-03: rgba(171, 171, 171, 0.3);
     --basic-gray-block: #6A6A6A;
     --basic-blue: #81B3D2;
     --basic-blue-logo: #81B3D3;
@@ -41,7 +45,7 @@
     --basic-brown-active: #503E33;
     --footer-background: rgba(255, 255, 255, 0.9);
     --footer-box-shadow-catalog: rgba(0, 1, 1, 0.2);
-    --body-fonts: "PT Sans", "Open Sans";
+    --body-fonts: "PT Sans", Arial, sans-serif;
 }
 
 
@@ -101,7 +105,24 @@ img {
 }
 
 
-/* Page navigation */
+/* Button */
+
+.btn {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-blue);
+    border: none;
+}
+
+.btn.btn-second {
+    background-color: var(--basic-brown);
+}
+
+
+/* Page-main-navigation */
 
 .page-header {
     display: flex;
@@ -177,6 +198,9 @@ img {
     z-index: 1;
 }
 
+
+/* Reasons */
+
 .reasons-row {
     display: flex;
 }
@@ -207,6 +231,13 @@ img {
     background-color: var(--basic-white-gray);
     color: var(--basic-black);
 }
+
+.reasons-row-last {
+    background-color: var(--basic-white-gray);
+}
+
+
+/* Features */
 
 .features {
     margin: 0;
@@ -266,9 +297,8 @@ img {
     margin: 0;
 }
 
-.reasons-row-last {
-    background-color: var(--basic-white-gray);
-}
+
+/* Footer */
 
 .page-footer {
     display: grid;
@@ -312,4 +342,446 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* Catalog-hotels */
+
+
+/* Hotels-search-form */
+
+.hotels-search-form {
+    display: flex;
+    background-color: var(--basic-blue);
+}
+
+.hotels-search-set {
+    min-width: 182px;
+    margin: 0;
+    padding: 0;
+    padding-top: 27px;
+    padding-left: 72px;
+    padding-bottom: 31px;
+    border: none;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.hotels-search-set-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.hotels-search-set-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hotels-search-set-label {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+    cursor: pointer;
+}
+
+.hotels-search-set-item {
+    margin-bottom: 22px;
+}
+
+.hotels-search-set-item:last-child {
+    margin-bottom: 0;
+}
+
+.hotels-search-set-label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/hotels/checkbox-off.svg);
+}
+
+input:checked+.hotels-search-set-label::before {
+    width: 27px;
+    background-image: url(../img/hotels/checkbox-on.svg);
+}
+
+.type-houses-search-set {
+    min-width: 182px;
+    margin: 0;
+    padding: 0;
+    padding-top: 27px;
+    padding-left: 72px;
+    padding-bottom: 31px;
+    border: none;
+    color: var(--basic-white);
+    text-transform: uppercase;
+}
+
+.type-houses-search-set-title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.type-houses-search-set-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.type-houses-search-set-label {
+    position: relative;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 40px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+    cursor: pointer;
+}
+
+.type-houses-search-set-item {
+    margin-bottom: 22px;
+}
+
+.type-houses-search-set-item:last-child {
+    margin-bottom: 0;
+}
+
+.type-houses-search-set-label::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/hotels/checkbox-off.svg);
+}
+
+input:checked+.type-houses-search-set-label::before {
+    width: 27px;
+    background-image: url(../img/hotels/checkbox-on.svg);
+}
+
+
+/* Filter-search-form */
+
+.filter-item {
+    color: var(--basic-white);
+    margin: 0 0 0 7px;
+    padding: 0;
+    border: none;
+    padding-top: 27px;
+    padding-right: 72px;
+    margin-left: auto;
+}
+
+.range-filter {
+    width: 317px;
+}
+
+.filter-item-legend {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.price-controls {
+    position: relative;
+    display: flex;
+    border: 2px solid var(--basic-white);
+}
+
+.min-price,
+.max-price {
+    width: 50%;
+    padding: 0 10px 0 30px;
+}
+
+.min-price {
+    padding: 0 10px 0 64px;
+}
+
+.max-price {
+    padding: 0 10px 0 53px;
+}
+
+.price-controls::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background-color: var(--basic-white);
+}
+
+.min-price-input,
+.max-price-input {
+    width: 60px;
+    padding: 8px 0;
+    border: none;
+    color: var(--basic-white);
+    background-color: transparent;
+}
+
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 21px;
+}
+
+.scale {
+    height: 2px;
+    background: var(--basic-white-03);
+}
+
+.bar {
+    width: 80%;
+    height: 2px;
+    background-color: var(--basic-white);
+}
+
+.toggle {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basic-white);
+    background-color: var(--basic-gray-filter-button);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 3px 0 var(--basic-gray-filter-button-03);
+}
+
+.toggle:hover {
+    transform: scale(1.2);
+}
+
+.toggle-min {
+    left: 0%;
+}
+
+.toggle-max {
+    left: 255px;
+}
+
+.show-btn {
+    display: flex;
+    justify-content: center;
+    max-width: 306px;
+}
+
+.show {
+    border: 2px solid var(--basic-white);
+    border-radius: 2px;
+    background: none;
+    color: var(--basic-white);
+    text-transform: uppercase;
+    padding: 7px 34px 8px 34px;
+    cursor: pointer;
+}
+
+.show:hover {
+    background: var(--basic-white);
+    color: var(--basic-black);
+}
+
+.hotels-sorting {
+    display: flex;
+    align-items: center;
+}
+
+.hotels-sorting-actions {
+    display: flex;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.hotels-sorting-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-left: 40px;
+    padding: 0;
+}
+
+.hotels-sorting-item {
+    margin-right: 32px;
+}
+
+.hotels-sorting-results {
+    margin-top: 29px;
+    margin-bottom: 31px;
+    margin-left: 73px;
+    margin-right: 29px;
+    font-size: 21px;
+    line-height: 26px;
+    width: 135px;
+    font-weight: 700;
+}
+
+.hotels-sorting-arrows {
+    margin-left: auto;
+    padding-right: 73px;
+}
+
+.hotels-sorting-button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: var(--basic-black-03);
+    border-bottom: 1px dotted var(--basic-black-03);
+    cursor: pointer;
+}
+
+.hotels-sorting-arrow {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 11px;
+    height: 10px;
+    color: var(--basic-gray-arrow-up);
+}
+
+.hotels-sorting-arrow.active {
+    color: var(--basic-blue);
+}
+
+.hotels-sorting-arrow:not(.active) {
+    cursor: pointer;
+}
+
+.hotels-sorting-arrow:not(.active):hover {
+    color: var(--basic-black);
+}
+
+.hotels-sorting-arrow:not(.active):active {
+    color: var(--basic-blue);
+}
+
+
+/* Hotels-list */
+
+.hotels-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--basic-light-grey-border-box);
+}
+
+.hotels-item {
+    display: flex;
+    list-style: none;
+    padding: 30px 73px;
+    border-bottom: 1px solid var(--basic-light-grey-border-box);
+}
+
+.hotel-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 29px;
+}
+
+.hotel-type {
+    margin: 0;
+    margin-right: 6px;
+    margin-top: auto;
+}
+
+.hotel-type span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hotel-type-button {
+    padding: 3px 16px;
+}
+
+.hotel-link {
+    margin-bottom: 8px;
+    margin-top: -3px;
+    width: 100%;
+}
+
+.hotel-link:hover {
+    color: var(--basic-blue);
+}
+
+.hotel-link:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.hotel-title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--basic-black);
+    margin: 0;
+}
+
+.hotel-rating {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.hotel-raiting-stars {
+    font-size: 0;
+    line-height: 0;
+    background-image: url(../img/hotels/star.svg);
+    height: 17px;
+    width: 19px;
+}
+
+.hotel-raiting-stars-two {
+    width: 38px;
+}
+
+.hotel-raiting-stars-three {
+    width: 57px;
+}
+
+.hotel-raiting-stars-four {
+    width: 76px;
+}
+
+.hotel-raiting-stars-five {
+    width: 95px;
+}
+
+.hotel-rating-rate {
+    background-color: var(--basic-light-grey);
+    color: var(--basic-gray-text-rating);
+    font-size: 14px;
+    line-height: 21px;
+    padding: 3px 12px 3px 15px;
 }
