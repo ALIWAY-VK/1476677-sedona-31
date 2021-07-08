@@ -3,7 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML Academy: Седона" />
+    <title>Каталог</title>
 
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="/img/favicons/sedona-icon-152.svg" type="image/svg+xml">
@@ -22,7 +26,7 @@
                 <a href="./index.html" class="nav-link">Информация</a>
                 <a href="#" class="nav-link">Фото и видео</a>
                 <a href="#" class="nav-link">Карта штата</a>
-                <a href="./hotels.html" class="nav-link">Гостиницы</a>
+                <a href="./hotels.html" class="nav-link nav-link-active">Гостиницы</a>
             </nav>
             <a href="./index.html" class="page-header-logo" aria-label="Переход на главную страницу">
                 <img class="header-logo" src="./img/logo/logo_sedona.png" width="138" height="70" alt="Логотип Седона">
@@ -31,7 +35,7 @@
         <main class="page-main">
             <section class="hotels-search">
                 <h2 class="visually-hidden">Форма поиска отелей</h2>
-                <form action="https://echo.htmlacademy.ru/" method="GET" class="hotels-search-form">
+                <form class="hotels-search-form" action="https://echo.htmlacademy.ru/" method="POST">
                     <fieldset class="hotels-search-set">
                         <p class="hotels-search-set-title">Инфраструктура:</p>
                         <ul class="hotels-search-set-list">
@@ -106,7 +110,7 @@
                     <div class="hotels-sorting-actions">
                         <span>Сортировка:</span>
                         <ul class="hotels-sorting-list">
-                            <li class="hotels-sorting-item"><button class="hotels-sorting-button">По цене</button></li>
+                            <li class="hotels-sorting-item"><button class="hotels-sorting-button hotels-sorting-button-active">По цене</button></li>
                             <li class="hotels-sorting-item"><button class="hotels-sorting-button">По типу</button></li>
                             <li class="hotels-sorting-item"><button class="hotels-sorting-button">По рейтингу</button></li>
                         </ul>

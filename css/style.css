@@ -811,12 +811,20 @@ img {
 
 /* Catalog-hotels */
 
+.nav-link-active {
+    color: var(--basic-brown);
+    pointer-events: none;
+}
+
 
 /* Hotels-search-form */
 
 .hotels-search-form {
     display: flex;
     background-color: var(--basic-blue);
+    background-image: url("../img/hotels/background_filter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hotels-search-set {
@@ -1119,8 +1127,26 @@ input:checked+.type-houses-search-set-label::before {
     line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-black-03);
-    border-bottom: 1px dotted var(--basic-black-03);
+    border-bottom: 1px dotted var(--basic-blue);
     cursor: pointer;
+}
+
+.hotels-sorting-button-active {
+    color: var(--basic-blue);
+    pointer-events: none;
+    opacity: 1;
+    border: none;
+}
+
+.hotels-sorting-button:hover {
+    color: var(--basic-blue);
+    opacity: 1;
+}
+
+.hotels-sorting-button:active {
+    color: var(--basic-black);
+    opacity: 1;
+    border: none;
 }
 
 .hotels-sorting-arrow {
