@@ -169,7 +169,7 @@ img {
 
 .nav-link {
     list-style: none;
-    margin: 0;
+    margin: 0px;
     padding: 0;
     width: 25%;
 }
@@ -260,7 +260,7 @@ img {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    margin: 0 auto 44px auto;
+    margin: -1px auto 44px auto;
     max-width: 470px;
 }
 
@@ -286,7 +286,7 @@ img {
     width: 400px;
     background-color: var(--basic-blue);
     color: var(--basic-white);
-    padding: 48px 44px 54px 44px;
+    padding: 45px 43px 53px 44px;
     text-align: center;
 }
 
@@ -294,13 +294,17 @@ img {
     font-weight: 700;
     font-size: 21px;
     line-height: 21px;
-    margin: 0 auto 27px auto;
+    margin: 2px auto 27px auto;
     max-width: 151px;
 }
 
-.reasons-item-title {
+.reasons-span {
     display: block;
     margin-bottom: 23px;
+}
+
+.reasons-item-description {
+    margin: 0;
 }
 
 .reasons-row-last .reasons-item {
@@ -335,7 +339,7 @@ img {
     width: 400px;
     padding: 0 55px;
     padding-top: 160px;
-    padding-bottom: 82px;
+    padding-bottom: 80px;
     text-align: center;
     position: relative;
 }
@@ -351,21 +355,21 @@ img {
     background-image: url("../img/index/icon-1-house.svg");
     width: 75px;
     height: 72px;
-    top: 62px;
+    top: 60px;
 }
 
 .features-item-food::before {
     background-image: url("../img/index/icon-3-food.svg");
     width: 75px;
     height: 70px;
-    top: 62px;
+    top: 61px;
 }
 
 .features-item-presents::before {
     background-image: url("../img/index/icon-2-presents.svg");
     width: 64px;
     height: 77px;
-    top: 56px;
+    top: 55px;
 }
 
 .features-item-description {
@@ -387,7 +391,7 @@ img {
 
 .booking-title {
     display: block;
-    margin: 0 auto 34px auto;
+    margin: 2px 355px 34px auto;
     max-width: 500px;
 }
 
@@ -395,7 +399,7 @@ img {
     font-size: 14px;
     line-height: 24px;
     color: var(--basic-dark-green);
-    margin: 0 auto 44px auto;
+    margin: -4px auto 47px auto;
     max-width: 450px;
 }
 
@@ -431,6 +435,7 @@ img {
 }
 
 .footer-info {
+    padding-bottom: 38px;
     padding-left: 72px;
     display: flex;
     flex-direction: column;
@@ -443,7 +448,7 @@ img {
 
 .footer-info-hashtag {
     display: block;
-    margin: 0 0 9px 0;
+    margin: -1px 0 8px 0;
 }
 
 .footer-info-phone {
@@ -474,6 +479,7 @@ img {
     width: 46px;
     height: 48px;
     background-color: var(--basic-blue);
+    margin-bottom: 3px;
 }
 
 .social-item {
@@ -501,7 +507,7 @@ img {
 }
 
 .website-by {
-    margin-right: 15px;
+    margin: -4px 15px 1px -64px;
 }
 
 .footer-dev {
@@ -512,7 +518,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 1px -1px;
 }
 
 .footer-dev-link {
@@ -617,6 +623,7 @@ img {
     background-color: var(--basic-light-grey);
     font-size: 14px;
     border: none;
+    text-transform: uppercase;
 }
 
 .arrival-input:hover {
@@ -643,6 +650,7 @@ img {
     font: inherit;
     background-color: var(--basic-light-grey);
     border: none;
+    text-transform: uppercase;
 }
 
 .exit-input:hover {
@@ -703,7 +711,7 @@ img {
 }
 
 .children-input {
-    margin-left: 35px;
+    margin-left: 24px;
     padding: 9px 35px;
     width: 113px;
     font-weight: 700;
@@ -767,7 +775,7 @@ img {
 .btn-minus-children {
     position: absolute;
     top: 1px;
-    right: 38%;
+    right: 42%;
     width: 39px;
     height: 30px;
     border: none;
@@ -1126,7 +1134,7 @@ input:checked+.type-houses-search-set-label::before {
     background-color: transparent;
     border: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 18px;
     text-transform: uppercase;
     color: var(--basic-black-03);
@@ -1200,12 +1208,14 @@ input:checked+.type-houses-search-set-label::before {
     display: flex;
     flex-wrap: wrap;
     margin-left: 29px;
+    margin-top: -3px;
 }
 
 .hotel-type {
     margin: 0;
-    margin-right: 6px;
+    margin-right: 8px;
     margin-top: auto;
+    margin-bottom: 3px;
 }
 
 .hotel-type span {
@@ -1214,11 +1224,10 @@ input:checked+.type-houses-search-set-label::before {
 }
 
 .hotel-type-button {
-    padding: 3px 16px;
+    padding: 5px 16px;
 }
 
 .hotel-link {
-    margin-bottom: 8px;
     margin-top: -3px;
     width: 100%;
 }
@@ -1257,19 +1266,19 @@ input:checked+.type-houses-search-set-label::before {
 }
 
 .hotel-raiting-stars-two {
-    width: 38px;
+    width: 42px;
 }
 
 .hotel-raiting-stars-three {
-    width: 57px;
+    width: 65px;
 }
 
 .hotel-raiting-stars-four {
-    width: 76px;
+    width: 90px;
 }
 
 .hotel-raiting-stars-five {
-    width: 95px;
+    width: 111px;
 }
 
 .hotel-rating-rate {
