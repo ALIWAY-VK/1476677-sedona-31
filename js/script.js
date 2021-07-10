@@ -1,4 +1,4 @@
-const searchBtn = document.querySelector('.form-search-link');
+const searchBtn = document.querySelector('.booking-button-search');
 const form = document.querySelector('.form');
 const formInputs = document.querySelectorAll('.form input');
 
@@ -13,10 +13,10 @@ if (form) {
         return flag;
     }
 
-    form.classList.remove('is-open');
+    form.classList.remove('form-open');
     searchBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        form.classList.toggle('is-open');
+        form.classList.toggle('form-open');
     });
 
     form.addEventListener('submit', (e) => {

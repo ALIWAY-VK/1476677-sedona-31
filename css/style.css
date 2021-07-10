@@ -688,6 +688,7 @@ img {
     margin-left: 35px;
     padding: 9px 35px;
     width: 113px;
+    font-weight: 700;
     text-align: center;
     background-color: var(--basic-light-grey);
     border: none;
@@ -705,6 +706,7 @@ img {
     margin-left: 35px;
     padding: 9px 35px;
     width: 113px;
+    font-weight: 700;
     text-align: center;
     background-color: var(--basic-light-grey);
     border: none;
@@ -822,7 +824,7 @@ img {
 .hotels-search-form {
     display: flex;
     background-color: var(--basic-blue);
-    background-image: url("../img/hotels/background_filter.png");
+    background-image: url("../img/catalog/background_filter.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -880,12 +882,12 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/hotels/checkbox-off.svg);
+    background-image: url(../img/catalog/checkbox-off.svg);
 }
 
 input:checked+.hotels-search-set-label::before {
     width: 27px;
-    background-image: url(../img/hotels/checkbox-on.svg);
+    background-image: url(../img/catalog/checkbox-on.svg);
 }
 
 .type-houses-search-set {
@@ -893,7 +895,7 @@ input:checked+.hotels-search-set-label::before {
     margin: 0;
     padding: 0;
     padding-top: 27px;
-    padding-left: 72px;
+    padding-left: 119px;
     padding-bottom: 31px;
     border: none;
     color: var(--basic-white);
@@ -941,12 +943,12 @@ input:checked+.hotels-search-set-label::before {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/hotels/checkbox-off.svg);
+    background-image: url(../img/catalog/checkbox-off.svg);
 }
 
 input:checked+.type-houses-search-set-label::before {
     width: 27px;
-    background-image: url(../img/hotels/checkbox-on.svg);
+    background-image: url(../img/catalog/checkbox-on.svg);
 }
 
 
@@ -1019,6 +1021,7 @@ input:checked+.type-houses-search-set-label::before {
     position: relative;
     height: 41px;
     padding-top: 21px;
+    margin-bottom: 16px;
 }
 
 .scale {
@@ -1036,8 +1039,8 @@ input:checked+.type-houses-search-set-label::before {
     position: absolute;
     z-index: 2;
     top: 12px;
-    width: 4px;
-    height: 4px;
+    width: 20px;
+    height: 21px;
     padding: 0;
     border: 8px solid var(--basic-white);
     background-color: var(--basic-gray-filter-button);
@@ -1152,6 +1155,7 @@ input:checked+.type-houses-search-set-label::before {
 .hotels-sorting-arrow {
     background-color: transparent;
     margin: 0;
+    margin-left: 12px;
     padding: 0;
     border: 0;
     width: 11px;
@@ -1247,7 +1251,7 @@ input:checked+.type-houses-search-set-label::before {
 .hotel-raiting-stars {
     font-size: 0;
     line-height: 0;
-    background-image: url(../img/hotels/star.svg);
+    background-image: url(../img/catalog/star.svg);
     height: 17px;
     width: 19px;
 }
